@@ -11,6 +11,7 @@ import pic2 from "../../../assets/photo_2_2024-08-13_23-59-04.jpg";
 import pic3 from "../../../assets/photo_3_2024-08-13_23-59-04.jpg";
 import pic4 from "../../../assets/photo_4_2024-08-13_23-59-04.jpg";
 import pic5 from "../../../assets/photo_5_2024-08-13_23-59-04.jpg";
+import ShowFullscreen from "./show-fullscreen";
 
 export function CarouselWithDots() {
   const [api, setApi] = React.useState<CarouselApi>();
@@ -32,19 +33,29 @@ export function CarouselWithDots() {
     <Carousel setApi={setApi} className="rounded-md overflow-hidden">
       <CarouselContent className="*:w-full">
         <CarouselItem className="aspect-square">
-          <img className="object-cover w-full h-full" src={pic1} />
+          <ShowFullscreen>
+            <img className="object-cover w-full h-full" src={pic1} />
+          </ShowFullscreen>
         </CarouselItem>
         <CarouselItem className="aspect-square">
-          <img className="object-cover w-full h-full" src={pic2} />
+          <ShowFullscreen>
+            <img className="object-cover w-full h-full" src={pic2} />
+          </ShowFullscreen>
         </CarouselItem>
         <CarouselItem className="aspect-square">
-          <img className="object-cover w-full h-full" src={pic3} />
+          <ShowFullscreen>
+            <img className="object-cover w-full h-full" src={pic3} />
+          </ShowFullscreen>
         </CarouselItem>
         <CarouselItem className="aspect-square">
-          <img className="object-cover w-full h-full" src={pic4} />
+          <ShowFullscreen>
+            <img className="object-cover w-full h-full" src={pic4} />
+          </ShowFullscreen>
         </CarouselItem>
         <CarouselItem className="aspect-square">
-          <img className="object-cover w-full h-full" src={pic5} />
+          <ShowFullscreen>
+            <img className="object-cover w-full h-full" src={pic5} />
+          </ShowFullscreen>
         </CarouselItem>
       </CarouselContent>
 

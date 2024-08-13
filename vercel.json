@@ -5,8 +5,8 @@
         "destination": "/index.html"
       },
       {
-        "source": "/tel:*",
-        "destination": ""
+        "source": "tel:*",
+        "destination": "tel:*"
       }
     ]
   }
