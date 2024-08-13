@@ -30,8 +30,11 @@ const Recommendations = () => {
               <CardTitle className="!mt-3 flex justify-between text-lg">
                 <button
                   onClick={() =>
-                    window.open(
-                      "https://www.waze.com/ul?ll=40.75889500%2C-73.98513100&navigate=yes&zoom=17"
+                    webApp.openLink(
+                      "https://www.waze.com/ul?ll=40.75889500%2C-73.98513100&navigate=yes&zoom=17",
+                      {
+                        try_instant_view: true,
+                      }
                     )
                   }
                   className="flex gap-2 text-telegram-link items-center underline underline-offset-4"
@@ -64,7 +67,7 @@ const Recommendations = () => {
               <Button
                 className="flex gap-2 items-center justify-center w-full"
                 onClick={() =>
-                  window.Telegram.WebApp.openLink("tel:+972535242201", {
+                  webApp.openLink("tel://+972535242201", {
                     try_instant_view: true,
                   })
                 }
