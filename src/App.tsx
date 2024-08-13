@@ -8,7 +8,9 @@ function App() {
   console.log(WebApp, user);
   return (
     <main className="flex w-full h-full bg-telegram-black">
-      <div className="text-white">{JSON.stringify(user)}</div>
+      <div>
+        <div className="text-white">{JSON.stringify(user)}</div>
+      </div>
     </main>
   );
 }
