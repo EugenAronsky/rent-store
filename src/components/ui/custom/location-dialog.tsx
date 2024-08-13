@@ -1,17 +1,15 @@
+import useTelegram from "@/hooks/useTelegram";
 import { useEffect, useState } from "react";
+import google_map from "../../../assets/google-maps-icon-2048x2048-fxw1yxmx.png";
+import waze from "../../../assets/icon-waze.png";
+import moovit from "../../../assets/Moovit_Dude-primary.webp";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
   DialogTitle,
   DialogTrigger,
 } from "../dialog";
-import { X } from "lucide-react";
-import useTelegram from "@/hooks/useTelegram";
-import waze from "../../../assets/icon-waze.png";
-import moovit from "../../../assets/Moovit_Dude-primary.webp";
-import google_map from "../../../assets/google-maps-icon-2048x2048-fxw1yxmx.png";
 
 const LocationDialog = ({ children }: { children: React.ReactNode }) => {
   const [open, setOpen] = useState(false);
