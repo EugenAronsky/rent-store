@@ -63,7 +63,9 @@ const Recommendations = () => {
             <CardFooter className="flex gap-3 p-3">
               <Button
                 className="flex gap-2 items-center justify-center w-full"
-                onClick={() => window.open("tel:+972535242201")}
+                onClick={() =>
+                  window.Telegram.WebApp.openLink("tel:+972535242201")
+                }
               >
                 Позвонить
                 <PhoneCall size={18} />
