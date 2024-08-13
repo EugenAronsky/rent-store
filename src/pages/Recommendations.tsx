@@ -7,9 +7,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { CarouselWithDots } from "@/components/ui/custom/carousel-with-dots";
+import useTelegram from "@/hooks/useTelegram";
 import { MapPinned, PenBox, PhoneCall, Pin } from "lucide-react";
 
 const Recommendations = () => {
+  const { wabApp } = useTelegram();
   return (
     <main className="flex flex-col w-full h-full bg-telegram-white items-center gap-3">
       <h1 className="text-telegram-black font-bold text-xl bg-telegram-white fixed py-3 w-full text-center z-10">
@@ -51,10 +53,11 @@ const Recommendations = () => {
               </span>
             </CardContent>
             <CardFooter className="flex gap-3 p-3">
-              <Button className="flex gap-2 items-center w-full">
-                <a href="tel:0535242201" target="_blank">
-                  Позвонить
-                </a>
+              <Button
+                onClick={() => wabApp.openLink("tel:0535242201")}
+                className="flex gap-2 items-center w-full"
+              >
+                Позвонить
                 <PhoneCall size={18} />
               </Button>
               <Button className="flex gap-2 items-center w-full">
