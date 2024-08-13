@@ -30,12 +30,9 @@ const LocationDialog = ({ children }: { children: React.ReactNode }) => {
         <div className="flex gap-3 justify-center">
           <button
             onClick={() =>
-              webApp.openLink(
-                "https://www.waze.com/ul?ll=40.75889500%2C-73.98513100&navigate=yes&zoom=17",
-                {
-                  try_instant_view: true,
-                }
-              )
+              webApp.openLink("https://maps.google.com/maps?q=New+York", {
+                try_instant_view: true,
+              })
             }
             className="flex items-center justify-center rounded-full w-16 h-16 overflow-hidden shadow-[0_1px_4px_2px] shadow-black/25"
           >
@@ -57,7 +54,7 @@ const LocationDialog = ({ children }: { children: React.ReactNode }) => {
           <button
             onClick={() =>
               webApp.openLink(
-                "https://www.waze.com/ul?ll=40.75889500%2C-73.98513100&navigate=yes&zoom=17",
+                "https://moovit.com/?to=Madison%20Square%20Park&tll=40.742191_-73.98803&metroId=121&lang=en",
                 {
                   try_instant_view: true,
                 }
