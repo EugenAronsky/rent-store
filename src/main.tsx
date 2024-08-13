@@ -1,13 +1,17 @@
+import "../app/globals.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
-import "../app/globals.css";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Recommendations from "./pages/Recommendations.tsx";
+import Form from "./pages/Form.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <Routes>
+        <Route index element={<Recommendations />} />
+        <Route element={<Form />} />
+      </Routes>
     </BrowserRouter>
   </StrictMode>
 );
