@@ -13,10 +13,12 @@ import { useEffect } from "react";
 
 const Recommendations = () => {
   const { webApp } = useTelegram();
+
   useEffect(() => {
     webApp.MainButton.setText("Apply Filters");
     webApp.MainButton.show();
   }, []);
+
   return (
     <main className="flex flex-col w-full h-full bg-telegram-white items-center gap-3">
       <h1 className="text-telegram-black font-bold text-xl bg-telegram-white fixed py-3 w-full text-center z-10">
