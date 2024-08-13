@@ -1,14 +1,12 @@
 import { Button } from "./components/ui/button";
-
-const WebApp = window.Telegram.WebApp;
-const user = { ...window.Telegram.WebApp.initDataUnsafe };
+import useTelegram from "./hooks/useTelegram";
 
 function App() {
-  console.log(WebApp, user);
+  const { onClose, onToggleButton } = useTelegram();
   return (
     <main className="flex w-full h-full bg-telegram-black">
-      <div className="text-white">{JSON.stringify(user)}</div>
-      <Button onClick={() => WebApp.close()}>Close</Button>
+      <Button onClick={onClose}>Close</Button>
+      <Button onClick={onToggleButton}>Toggle</Button>
     </main>
   );
 }
