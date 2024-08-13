@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { CarouselWithDots } from "@/components/ui/custom/carousel-with-dots";
+import LocationDialog from "@/components/ui/custom/location-dialog";
 import useTelegram from "@/hooks/useTelegram";
 import { MapPinned, PenBox, PhoneCall, Pin } from "lucide-react";
 import { useEffect } from "react";
@@ -30,20 +31,12 @@ const Recommendations = () => {
             <CardHeader className="p-3">
               <CarouselWithDots />
               <CardTitle className="!mt-3 flex justify-between text-lg">
-                <button
-                  onClick={() =>
-                    webApp.openLink(
-                      "https://www.waze.com/ul?ll=40.75889500%2C-73.98513100&navigate=yes&zoom=17",
-                      {
-                        try_instant_view: true,
-                      }
-                    )
-                  }
-                  className="flex gap-2 text-telegram-link items-center underline underline-offset-4"
-                >
-                  <MapPinned size={22} />
-                  <p>Уша 13 Кирьят Моцкин</p>
-                </button>
+                <LocationDialog>
+                  <div className="flex gap-2 text-telegram-link items-center underline underline-offset-4">
+                    <MapPinned size={22} />
+                    <p>Уша 13 Кирьят Моцкин</p>
+                  </div>
+                </LocationDialog>
                 4300 ₪
               </CardTitle>
             </CardHeader>
