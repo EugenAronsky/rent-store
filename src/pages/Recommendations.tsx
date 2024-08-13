@@ -64,7 +64,9 @@ const Recommendations = () => {
               <Button
                 className="flex gap-2 items-center justify-center w-full"
                 onClick={() =>
-                  window.Telegram.WebApp.openLink("tel:+972535242201")
+                  window.Telegram.WebApp.openLink("tel:+972535242201", {
+                    try_instant_view: true,
+                  })
                 }
               >
                 Позвонить
