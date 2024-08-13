@@ -16,7 +16,7 @@ const Recommendations = () => {
 
   useEffect(() => {
     webApp.MainButton.setText("Apply Filters");
-    webApp.MainButton.show();
+    // webApp.MainButton.show();
   }, []);
 
   return (
@@ -69,7 +69,7 @@ const Recommendations = () => {
               <Button
                 className="flex gap-2 items-center justify-center w-full"
                 onClick={() =>
-                  webApp.openLink("tel://+972-53-524-2201", {
+                  webApp.openLink("tel:+972-53-524-2201", {
                     try_instant_view: true,
                   })
                 }
