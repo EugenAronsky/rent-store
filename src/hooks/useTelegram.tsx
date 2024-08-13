@@ -9,7 +9,7 @@ const useTelegram = () => {
   return {
     onClose,
     onToggleButton,
-    wabApp: WebApp,
+    webApp: WebApp,
     user: WebApp.initDataUnsafe?.user,
   };
 };

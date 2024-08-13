@@ -7,9 +7,16 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { CarouselWithDots } from "@/components/ui/custom/carousel-with-dots";
+import useTelegram from "@/hooks/useTelegram";
 import { MapPinned, PenBox, PhoneCall, Pin } from "lucide-react";
+import { useEffect } from "react";
 
 const Recommendations = () => {
+  const { webApp } = useTelegram();
+  useEffect(() => {
+    webApp.MainButton.setText("Apply Filters");
+    webApp.MainButton.show();
+  }, []);
   return (
     <main className="flex flex-col w-full h-full bg-telegram-white items-center gap-3">
       <h1 className="text-telegram-black font-bold text-xl bg-telegram-white fixed py-3 w-full text-center z-10">
@@ -53,7 +60,7 @@ const Recommendations = () => {
             <CardFooter className="flex gap-3 p-3">
               <Button
                 className="flex gap-2 items-center justify-center w-full"
-                onClick={() => window.open("tel:0535242201")}
+                onClick={() => window.open("tel:+972535242201")}
               >
                 Позвонить
                 <PhoneCall size={18} />
