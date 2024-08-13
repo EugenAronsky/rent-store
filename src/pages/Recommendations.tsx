@@ -55,7 +55,7 @@ const Recommendations = () => {
                 <PhoneCall size={18} />
               </Button>
               <Button className="flex gap-2 items-center w-full">
-                <a href="https://t.me/@sergioboiko">Написать</a>
+                <a href="https://t.me/sergioboiko">Написать</a>
                 <PenBox size={18} />
               </Button>
             </CardFooter>
