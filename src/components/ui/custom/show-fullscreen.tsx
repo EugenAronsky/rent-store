@@ -18,7 +18,7 @@ const ShowFullscreen = ({ children }: { children: React.ReactNode }) => {
         onClick={() => setOpen(false)}
         className="w-full h-full bg-black border-0 p-0 flex items-center *:w-full *:h-fit *:object-contain"
       >
-        <DialogClose className="absolute top-3 left-3">
+        <DialogClose className="absolute w-fit top-3 left-3 *:!ring-offset-background *:!ring-0 *:!ring-offset-0 *:!outline-none ">
           <X className="stroke-white" />
         </DialogClose>
         {children}
