@@ -52,7 +52,9 @@ const Recommendations = () => {
             </CardContent>
             <CardFooter className="flex gap-3 p-3">
               <Button className="flex gap-2 items-center w-full">
-                <a href="tel:0535242201">Позвонить</a>
+                <a href="tel:0535242201" target="_blank">
+                  Позвонить
+                </a>
                 <PhoneCall size={18} />
               </Button>
               <Button className="flex gap-2 items-center w-full">
