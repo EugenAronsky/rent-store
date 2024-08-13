@@ -28,14 +28,17 @@ const Recommendations = () => {
             <CardHeader className="p-3">
               <CarouselWithDots />
               <CardTitle className="!mt-3 flex justify-between text-lg">
-                <a
-                  target="_blank"
-                  href="https://www.waze.com/ul?ll=40.75889500%2C-73.98513100&navigate=yes&zoom=17"
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://www.waze.com/ul?ll=40.75889500%2C-73.98513100&navigate=yes&zoom=17"
+                    )
+                  }
                   className="flex gap-2 text-telegram-link items-center underline underline-offset-4"
                 >
                   <MapPinned size={22} />
                   <p>Уша 13 Кирьят Моцкин</p>
-                </a>
+                </button>
                 4300 ₪
               </CardTitle>
             </CardHeader>
