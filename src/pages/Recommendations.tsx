@@ -17,7 +17,7 @@ const Recommendations = () => {
       </h1>
       <section className="flex flex-col w-full h-fit mt-[52px] p-3 gap-3 bg-telegram-secondary-white">
         {Array.from({ length: 3 }).map(() => (
-          <Card className="bg-telegram-white shadow-black/30 shadow-lg">
+          <Card className="bg-white shadow-black/30 shadow-lg">
             <CardHeader className="p-3">
               <CarouselWithDots />
               <CardTitle className="!mt-3 flex justify-between text-lg">
