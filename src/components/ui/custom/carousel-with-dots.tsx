@@ -33,16 +33,16 @@ export function CarouselWithDots() {
       <CarouselContent className="*:w-full">
         <CarouselItem className="aspect-square">
           <img className="object-cover w-full h-full" src={pic1} />
-        </CarouselItem>{" "}
+        </CarouselItem>
         <CarouselItem className="aspect-square">
           <img className="object-cover w-full h-full" src={pic2} />
-        </CarouselItem>{" "}
+        </CarouselItem>
         <CarouselItem className="aspect-square">
           <img className="object-cover w-full h-full" src={pic3} />
-        </CarouselItem>{" "}
+        </CarouselItem>
         <CarouselItem className="aspect-square">
           <img className="object-cover w-full h-full" src={pic4} />
-        </CarouselItem>{" "}
+        </CarouselItem>
         <CarouselItem className="aspect-square">
           <img className="object-cover w-full h-full" src={pic5} />
         </CarouselItem>
