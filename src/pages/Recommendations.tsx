@@ -22,7 +22,8 @@ const Recommendations = () => {
               <CarouselWithDots />
               <CardTitle className="!mt-3 flex justify-between text-lg">
                 <a
-                  href="https://maps.google.com/maps?daddr=<lat>,<long>&amp;ll="
+                  target="_blank"
+                  href="https://www.waze.com/ul?ll=40.75889500%2C-73.98513100&navigate=yes&zoom=17"
                   className="flex gap-2 text-telegram-link items-center underline underline-offset-4"
                 >
                   <MapPinned size={22} />
@@ -55,7 +56,9 @@ const Recommendations = () => {
                 <PhoneCall size={18} />
               </Button>
               <Button className="flex gap-2 items-center w-full">
-                <a href="https://t.me/sergioboiko">Написать</a>
+                <a href="https://t.me/sergioboiko?text=Квартира по адресу — Уша 13 Кирьят Моцкин ещё реливантна?">
+                  Написать
+                </a>
                 <PenBox size={18} />
               </Button>
             </CardFooter>
