@@ -48,7 +48,7 @@ const LocationDrawer = ({ children }: { children: React.ReactNode }) => {
                 }
               )
             }
-            className="flex items-center justify-center rounded-full w-16 h-16 overflow-hidden shadow-[0_1px_4px_2px] shadow-black/25"
+            className="flex bg-[#33ccff] items-center justify-center rounded-full w-16 h-16 overflow-hidden shadow-[0_1px_4px_2px] shadow-black/25"
           >
             <img src={waze} />
           </button>

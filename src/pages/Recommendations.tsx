@@ -22,7 +22,7 @@ const Recommendations = () => {
 
   return (
     <main className="flex flex-col w-full h-full bg-telegram-white items-center gap-3">
-      <h1 className="text-telegram-black font-bold text-xl bg-telegram-white fixed py-3 w-full text-center z-10">
+      <h1 className="text-telegram-black font-bold text-xl bg-telegram-white fixed py-3 w-full text-center z-10 shadow-telegram-black/30 shadow-md">
         Relevant Apartments
       </h1>
       <section className="flex flex-col w-full h-fit mt-[52px] p-3 gap-3 bg-telegram-secondary-white">
@@ -61,7 +61,7 @@ const Recommendations = () => {
             <CardFooter className="flex gap-3 p-3">
               <Button
                 className="flex active:bg-telegram-secondary-white active:text-telegram-black transition-all gap-2 items-center justify-center w-full bg-telegram-black text-telegram-white hover:bg-telegram-black"
-                onClick={() => (document.location.href = "tel:+972535242201")}
+                onClick={() => window.open(new URL("tel:+972535242201").href)}
               >
                 Позвонить
                 <PhoneCall size={18} />
