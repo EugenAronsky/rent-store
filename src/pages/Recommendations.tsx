@@ -61,9 +61,10 @@ const Recommendations = () => {
             <CardFooter className="flex gap-3 p-3">
               <Button
                 className="flex active:bg-telegram-secondary-white active:text-telegram-black transition-all gap-2 items-center justify-center w-full bg-telegram-black text-telegram-white hover:bg-telegram-black"
-                onClick={() =>
-                  window.open("https://tinyurl.com/4xzstsm4", "_blank")
-                }
+                onClick={() => {
+                  webApp.sendData("058-520-8295");
+                  // window.open("https://tinyurl.com/4xzstsm4", "_blank")
+                }}
               >
                 Позвонить
                 <PhoneCall size={18} />
