@@ -30,7 +30,7 @@ const Recommendations = () => {
           <Card className="bg-white shadow-black/30 shadow-lg">
             <CardHeader className="p-3">
               <CarouselWithDots />
-              <CardTitle className="!mt-3 flex justify-between text-lg">
+              <CardTitle className="!mt-3 flex justify-between text-lg text-telegram-black">
                 <LocationDialog>
                   <div className="flex gap-2 text-telegram-link items-center underline underline-offset-4">
                     <MapPinned size={22} />
@@ -40,7 +40,7 @@ const Recommendations = () => {
                 4300 ₪
               </CardTitle>
             </CardHeader>
-            <CardContent className="px-3 py-1">
+            <CardContent className="px-3 py-1 text-telegram-black">
               <span className="flex gap-2 items-center">
                 <Pin size={18} className="stroke-black fill-red-500" />
                 <p>4 комнаты</p>
@@ -60,13 +60,13 @@ const Recommendations = () => {
             </CardContent>
             <CardFooter className="flex gap-3 p-3">
               <Button
-                className="flex gap-2 items-center justify-center w-full"
+                className="flex active:bg-telegram-secondary-white active:text-telegram-black transition-all gap-2 items-center justify-center w-full bg-telegram-black text-telegram-primary-text hover:bg-telegram-black"
                 onClick={() => (document.location.href = "tel:+972535242201")}
               >
                 Позвонить
                 <PhoneCall size={18} />
               </Button>
-              <Button className="flex gap-2 items-center w-full">
+              <Button className="flex active:bg-telegram-secondary-white active:text-telegram-black transition-all gap-2 items-center w-full bg-telegram-black text-telegram-primary-text hover:bg-telegram-black">
                 <a href="https://t.me/sergioboiko?text=Квартира по адресу — Уша 13 Кирьят Моцкин ещё реливантна?">
                   Написать
                 </a>
