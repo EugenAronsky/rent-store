@@ -4,14 +4,14 @@ import google_map from "../../../assets/google-maps-icon-2048x2048-fxw1yxmx.png"
 import waze from "../../../assets/icon-waze.png";
 import moovit from "../../../assets/Moovit_Dude-primary.webp";
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogTitle,
-  DialogTrigger,
-} from "../dialog";
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerTitle,
+  DrawerTrigger,
+} from "../drawer";
 
-const LocationDialog = ({ children }: { children: React.ReactNode }) => {
+const LocationDrawer = ({ children }: { children: React.ReactNode }) => {
   const [open, setOpen] = useState(false);
   const { webApp } = useTelegram();
 
@@ -20,12 +20,12 @@ const LocationDialog = ({ children }: { children: React.ReactNode }) => {
   }, [open]);
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent onClick={() => setOpen(false)}>
-        <DialogTitle className="hidden" />
-        <DialogDescription className="hidden" />
-        <div className="flex gap-3 justify-center">
+    <Drawer open={open} onOpenChange={setOpen}>
+      <DrawerTrigger asChild>{children}</DrawerTrigger>
+      <DrawerContent onClick={() => setOpen(false)}>
+        <DrawerTitle className="hidden" />
+        <DrawerDescription className="hidden" />
+        <div className="flex gap-3 py-3  justify-center">
           <button
             onClick={() =>
               webApp.openLink("https://maps.google.com/maps?q=New+York", {
@@ -63,9 +63,9 @@ const LocationDialog = ({ children }: { children: React.ReactNode }) => {
             <img src={moovit} />
           </button>
         </div>
-      </DialogContent>
-    </Dialog>
+      </DrawerContent>
+    </Drawer>
   );
 };
 
-export default LocationDialog;
+export default LocationDrawer;

@@ -30,10 +30,10 @@ const Recommendations = () => {
           <Card className="bg-telegram-white border-telegram-white shadow-telegram-black/30 shadow-lg">
             <CardHeader className="p-3">
               <CarouselWithDots />
-              <CardTitle className="!mt-3 flex justify-between text-lg text-telegram-black">
+              <CardTitle className="!mt-3 flex justify-between text-base text-telegram-black items-center">
                 <LocationDialog>
-                  <div className="flex gap-2 text-telegram-link items-center underline underline-offset-4">
-                    <MapPinned size={22} />
+                  <div className="flex gap-2 bg-telegram-primary active:text-telegram-primary active:bg-telegram-secondary-white transition-all text-telegram-primary-text items-center px-2 py-1 rounded-md">
+                    <MapPinned size={20} />
                     <p>Уша 13 Кирьят Моцкин</p>
                   </div>
                 </LocationDialog>
