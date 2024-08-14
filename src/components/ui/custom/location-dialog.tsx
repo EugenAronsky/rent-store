@@ -22,7 +22,10 @@ const LocationDrawer = ({ children }: { children: React.ReactNode }) => {
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>{children}</DrawerTrigger>
-      <DrawerContent onClick={() => setOpen(false)}>
+      <DrawerContent
+        onClick={() => setOpen(false)}
+        className="bg-telegram-white border-telegram-white"
+      >
         <DrawerTitle className="hidden" />
         <DrawerDescription className="hidden" />
         <div className="flex gap-3 py-3  justify-center">
