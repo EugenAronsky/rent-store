@@ -42,31 +42,31 @@ const Recommendations = () => {
             </CardHeader>
             <CardContent className="px-3 py-1 text-telegram-black">
               <span className="flex gap-2 items-center">
-                <Pin size={18} className="stroke-black fill-red-500" />
+                <Pin size={18} className="stroke-telegram-black fill-red-500" />
                 <p>4 комнаты</p>
               </span>
               <span className="flex gap-2 items-center">
-                <Pin size={18} className="stroke-black fill-red-500" />
+                <Pin size={18} className="stroke-telegram-black fill-red-500" />
                 <p>1/1 этаж</p>
               </span>
               <span className="flex gap-2 items-center">
-                <Pin size={18} className="stroke-black fill-red-500" />
+                <Pin size={18} className="stroke-telegram-black fill-red-500" />
                 <p>вход с 1.10</p>
               </span>
               <span className="flex gap-2 items-center">
-                <Pin size={18} className="stroke-black fill-red-500" />
+                <Pin size={18} className="stroke-telegram-black fill-red-500" />
                 <p>меблирована</p>
               </span>
             </CardContent>
             <CardFooter className="flex gap-3 p-3">
               <Button
-                className="flex active:bg-telegram-secondary-white active:text-telegram-black transition-all gap-2 items-center justify-center w-full bg-telegram-black text-telegram-primary-text hover:bg-telegram-black"
+                className="flex active:bg-telegram-secondary-white active:text-telegram-black transition-all gap-2 items-center justify-center w-full bg-telegram-black text-telegram-white hover:bg-telegram-black"
                 onClick={() => (document.location.href = "tel:+972535242201")}
               >
                 Позвонить
                 <PhoneCall size={18} />
               </Button>
-              <Button className="flex active:bg-telegram-secondary-white active:text-telegram-black transition-all gap-2 items-center w-full bg-telegram-black text-telegram-primary-text hover:bg-telegram-black">
+              <Button className="flex active:bg-telegram-secondary-white active:text-telegram-black transition-all gap-2 items-center w-full bg-telegram-black text-telegram-white hover:bg-telegram-black">
                 <a href="https://t.me/sergioboiko?text=Квартира по адресу — Уша 13 Кирьят Моцкин ещё реливантна?">
                   Написать
                 </a>
