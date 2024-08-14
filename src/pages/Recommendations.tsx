@@ -63,6 +63,13 @@ const Recommendations = () => {
                 className="flex active:bg-telegram-secondary-white active:text-telegram-black transition-all gap-2 items-center justify-center w-full bg-telegram-black text-telegram-white hover:bg-telegram-black"
                 onClick={() => {
                   webApp.sendData("058-520-8295");
+                  window.parent.postMessage(
+                    JSON.stringify({
+                      eventType: "eventType",
+                      eventData: "eventData",
+                    }),
+                    "/sqwq"
+                  );
                   // window.open("https://tinyurl.com/4xzstsm4", "_blank")
                 }}
               >
