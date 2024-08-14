@@ -62,9 +62,7 @@ const Recommendations = () => {
               <Button
                 className="flex active:bg-telegram-secondary-white active:text-telegram-black transition-all gap-2 items-center justify-center w-full bg-telegram-black text-telegram-white hover:bg-telegram-black"
                 onClick={() =>
-                  webApp.openLink("https://appurl.io/ArOjMU3rvF", {
-                    try_instant_view: true,
-                  })
+                  window.open("https://appurl.io/ArOjMU3rvF", "_blank")
                 }
               >
                 Позвонить
