@@ -61,7 +61,9 @@ const Recommendations = () => {
             <CardFooter className="flex gap-3 p-3">
               <Button
                 className="flex active:bg-telegram-secondary-white active:text-telegram-black transition-all gap-2 items-center justify-center w-full bg-telegram-black text-telegram-white hover:bg-telegram-black"
-                onClick={() => webApp.openLink(new URL("tel:13421312321").href)}
+                onClick={() =>
+                  webApp.openLink("tel:0585208295", { try_instant_view: true })
+                }
               >
                 Позвонить
                 <PhoneCall size={18} />
