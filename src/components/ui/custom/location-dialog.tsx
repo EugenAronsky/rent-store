@@ -24,7 +24,7 @@ const LocationDrawer = ({ children }: { children: React.ReactNode }) => {
       <DrawerTrigger asChild>{children}</DrawerTrigger>
       <DrawerContent
         onClick={() => setOpen(false)}
-        className="bg-telegram-white border-telegram-white"
+        className="bg-telegram-white border-telegram-white outline-none ring-0 ring-offset-background"
       >
         <DrawerTitle className="hidden" />
         <DrawerDescription className="hidden" />
