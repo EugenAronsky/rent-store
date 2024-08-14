@@ -17,7 +17,10 @@ const Recommendations = () => {
 
   useEffect(() => {
     webApp.MainButton.setText("Apply Filters");
-    // webApp.MainButton.show();
+    webApp.onEvent("mainButtonClicked", () =>
+      webApp.sendData(JSON.stringify({ number: "058-520-8295" }))
+    );
+    webApp.MainButton.show();
   }, []);
 
   return (
@@ -61,9 +64,9 @@ const Recommendations = () => {
             <CardFooter className="flex gap-3 p-3">
               <Button
                 className="flex active:bg-telegram-secondary-white active:text-telegram-black transition-all gap-2 items-center justify-center w-full bg-telegram-black text-telegram-white hover:bg-telegram-black"
-                onClick={() => {
-                  webApp.sendData(JSON.stringify("058-520-8295"));
-                }}
+                onClick={() =>
+                  webApp.sendData(JSON.stringify({ number: "058-520-8295" }))
+                }
               >
                 Позвонить
                 <PhoneCall size={18} />
